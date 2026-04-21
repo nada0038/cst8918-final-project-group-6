@@ -1,8 +1,8 @@
 # CST8918 Final Project
 
 **Team 6 Members:**
-- [Akash Nadackanal Vinod](https://github.com/YOUR_GITHUB_USERNAME)
-- [Abijith Anil](https://github.com/YOUR_GITHUB_USERNAME)
+- [Akash Nadackanal Vinod](https://github.com/nada0038)
+- [Abijith Anil](https://github.com/anil0015)
 
 **Professor:** Prof: Robert McKenney
 
