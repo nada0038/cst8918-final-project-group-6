@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: remix-weather-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: remix-weather-app
+  template:
+    metadata:
+      labels:
+        app: remix-weather-app
+    spec:
+      containers:
+      - name: remix-weather-app
+        image: acrremix.azurecr.io/weather-app:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: REDIS_URL
+          valueFrom:
+            secretKeyRef:
+              name: redis-secret
+              key: redis-url

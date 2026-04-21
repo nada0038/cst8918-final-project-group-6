@@ -1,0 +1,14 @@
+node_modules
+
+/.cache
+/build
+/public/build
+.env
+
+.DS_Store
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
