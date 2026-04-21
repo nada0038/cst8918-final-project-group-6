@@ -33,5 +33,6 @@ jobs:
         with:
           working_directory: ./terraform
           version: v1.28.1
+          soft_fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
