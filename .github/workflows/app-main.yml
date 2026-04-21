@@ -54,10 +54,10 @@ jobs:
 
       - name: Get AKS Prod Credentials
         run: |
-          az aks get-credentials --resource-group cst8918-final-project-group-YOUR_GROUP_NUMBER --name aks-prod --overwrite-existing
+          az aks get-credentials --resource-group cst8918-final-project-group-GROUP_6 --name aks-prod --overwrite-existing
 
       - name: Set Image Tag and Deploy
         run: |
-          sed -i "s|image: .*|image: acrremixYOUR_GROUP_NUMBER.azurecr.io/weather-app:${{ github.sha }}|g" k8s/deployment.yaml
+          sed -i "s|image: .*|image: acrremixGROUP_6.azurecr.io/weather-app:${{ github.sha }}|g" k8s/deployment.yaml
           kubectl apply -f k8s/deployment.yaml
           kubectl apply -f k8s/service.yaml
